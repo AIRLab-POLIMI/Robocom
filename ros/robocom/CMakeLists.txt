@@ -4,8 +4,7 @@ project(robocom)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-# find_package(catkin REQUIRED COMPONENTS image_transport uvc_camera)
-find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs geometry_msgs message_generation)
+find_package(catkin REQUIRED COMPONENTS rospy)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -52,7 +51,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs geometry_msgs mess
 catkin_package(
   INCLUDE_DIRS
   LIBRARIES robocom
-  CATKIN_DEPENDS message_runtime
+  CATKIN_DEPENDS
   DEPENDS system_lib
 )
 #  CATKIN_DEPENDS message_runtime image_transport uvc_camera
